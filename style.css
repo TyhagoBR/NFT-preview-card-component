@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-darkblue-mainbg: hsl(217, 54%, 11%);
+    --very-darkblue-cardbg: hsl(216, 50%, 16%);
+    --very-darkblue-line: hsla(215, 32%, 27%, 0.493);
+    --white: hsl(0, 0%, 100%);
+
+    --font: 'Outfit', sans-serif;
+}
+
+body{
+    
+    background-color: var(--very-darkblue-mainbg);
+    font-family: var(--font);
+    
+
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 1rem;
+    background-color: var(--very-darkblue-cardbg);
+    border-radius: 10px;
+    max-width: 375px;
+    height: 620px;
+    margin: 140px auto;
+
+}
+
+.img-main {
+    position: relative;
+}
+
+.img-main div {
+    position: absolute;
+    background-color: aqua;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.img-main div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.view {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.equilibrium {
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+    
+}
+
+.NFT-title {
+    color: var(--white);
+    font-weight: 600;
+    padding-top: 8px;
+}
+
+.NFT-description {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.NFT-price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--soft-blue);
+    padding-bottom: 1rem;
+    
+}
+
+.NFT-currency {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+
+    
+}
+
+.NFT-currency img {
+    margin-right: 10px;
+}
+
+.time-left{
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+    
+}
+
+.time-left img {
+    margin-right: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    display: block;
+    width:  36px;
+    height: 36px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.NFT-creation {
+    color: var(--soft-blue);
+}
+
+.color-name {
+    color: white;
+}
+
+.NFT-title:hover, .color-name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
